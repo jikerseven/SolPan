@@ -1,0 +1,512 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SolPan Inc.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- 
+	Default Theme Style 
+	You can change the style.css (default color purple) to one of these styles
+	
+	1. pink.css
+	2. blue.css
+	3. turquoise.css
+	4. orange.css
+	5. lightblue.css
+	6. brown.css
+	7. green.css
+
+	-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+	<link rel="stylesheet" id="theme-switch" href="css/style.css">
+	<!-- End demo purposes only -->
+
+
+	<style>
+	/* For demo purpose only */
+	
+	/* For Demo Purposes Only ( You can delete this anytime :-) */
+	#colour-variations {
+		padding: 10px;
+		-webkit-transition: 0.5s;
+	  	-o-transition: 0.5s;
+	  	transition: 0.5s;
+		width: 140px;
+		position: fixed;
+		left: 0;
+		top: 100px;
+		z-index: 999999;
+		background: #fff;
+		/*border-radius: 4px;*/
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	#colour-variations.sleep {
+		margin-left: -140px;
+	}
+	#colour-variations h3 {
+		text-align: center;;
+		font-size: 11px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #777;
+		margin: 0 0 10px 0;
+		padding: 0;;
+	}
+	#colour-variations ul,
+	#colour-variations ul li {
+		padding: 0;
+		margin: 0;
+	}
+	#colour-variations li {
+		list-style: none;
+		display: inline;
+	}
+	#colour-variations li a {
+		width: 20px;
+		height: 20px;
+		position: relative;
+		float: left;
+		margin: 5px;
+	}
+	#colour-variations li a[data-theme="style"] {
+		background: #6173f4;
+	}
+	#colour-variations li a[data-theme="pink"] {
+		background: #f64662;
+	}
+	#colour-variations li a[data-theme="blue"] {
+		background: #2185d5;
+	}
+	#colour-variations li a[data-theme="turquoise"] {
+		background: #00b8a9;
+	}
+	#colour-variations li a[data-theme="orange"] {
+		background: #ff6600;
+	}
+	#colour-variations li a[data-theme="lightblue"] {
+		background: #5585b5;
+	}
+	#colour-variations li a[data-theme="brown"] {
+		background: #a03232;
+	}
+	#colour-variations li a[data-theme="green"] {
+		background: #65d269;
+	}
+
+	.option-toggle {
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-top: 5px;
+		margin-right: -30px;
+		width: 30px;
+		height: 30px;
+		background: #f64662;
+		text-align: center;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		color: #fff;
+		cursor: pointer;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	.option-toggle i {
+		top: 2px;
+		position: relative;
+	}
+	.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
+		color:  #fff;
+		text-decoration: none;
+		outline: none;
+	}
+	</style>
+	<!-- End demo purposes only -->
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<header role="banner" id="fh5co-header">
+			<div class="container">
+				<!-- <div class="row"> -->
+			    <nav class="navbar navbar-default">
+		        <div class="navbar-header">
+		        	<!-- Mobile Toggle Menu Button -->
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		          	<a class="navbar-brand" href="index.html">SolPan Inc.</a> 
+		        </div>
+		        <div id="navbar" class="navbar-collapse collapse">
+		          <ul class="nav navbar-nav navbar-right">
+		            <li class="active"><a href="#" data-nav-section="home"><span>Accueil</span></a></li>
+		            <li><a href="#" data-nav-section="about"><span>Mission</span></a></li>
+		            <li><a href="#" data-nav-section="services"><span>Services</span></a></li>
+		            <li><a href="#" data-nav-section="pricing"><span>Prix</span></a></li>
+		            <li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+		          </ul>
+		        </div>
+			    </nav>
+			  <!-- </div> -->
+		  </div>
+	</header>
+
+	<div id="slider" data-section="home">
+		<div class="owl-carousel owl-carousel-fullwidth">
+			
+			<!-- You may change the background color here.  -->
+		    <div class="item" style="background: #38569f;">
+		    	<div class="container" style="position: relative;">
+		    		<div class="row">
+		    			<div class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5">
+			    			<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text">
+						    		<h1 class="fh5co-lead to-animate">De l'énergie verte à un prix abordable</h1>
+									<h2 class="fh5co-sub-lead to-animate">Vous pouvez maintenant vous munir de panneaux solaires pour combler vos besoins en électricité sans nuire à l'environnement</h3>
+									<!-- <p class="to-animate-2"><a href="#" class="btn btn-primary btn-lg">View Case Study</a></p> -->
+						    	</div>
+						    </div>
+					    </div>
+					    <div class="col-md-4 col-md-pull-7 col-sm-4 col-sm-pull-7 iphone-image">
+					    	<div class="iphone to-animate-2"><img src="images/panneaux-solaires-1.jpg" alt="Free HTML5 Template by FREEHTML5.co"></div>
+					    </div>
+
+		    		</div>
+		    	</div>
+		    </div>
+			<!-- You may change the background color here. -->
+		    <div class="item" style="background: #9CDF5C;">
+		    	<div class="container" style="position: relative;">
+		    		<div class="row">
+					    <div class="col-md-7 col-sm-7">
+			    			<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text">
+						    		<h1 class="fh5co-lead to-animate">Utilisez pleinement l'espace dont vous disposez</h1>
+									<h2 class="fh5co-sub-lead to-animate">SolPan vous offre de poser, de vous guider et d'assurer la maintenance des panneaux solaires pour gérer votre espace disponible</h3>
+									<!-- <p class="to-animate-2"><a href="#" class="btn btn-primary btn-lg">View Case Study</a></p> -->
+						    	</div>
+						    </div>
+					    </div>
+					    <div class="col-md-4 col-md-push-1 col-sm-4 col-sm-push-1 iphone-image">
+					    	<div class="iphone to-animate-2"><img src="images/energieVerte.jpg" alt="Free HTML5 Template by FREEHTML5.co"></div>
+					    </div>
+
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+	
+	<div id="fh5co-about-us" data-section="about">
+		<div class="container">
+			<div class="row row-bottom-padded-lg" id="about-us">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Mission</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 to-animate">
+							<h3>SolPan veut changer le monde un panneau à la fois. Nous sommes une entreprise qui propose des panneaux solaires pour recouvrir les surfaces que vous pourriez exploiter davantage!
+								Nous gérons la vente, la pose et la maintenance des panneaux solaires pour tous vos recouvrements! </h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="team">
+				<div class="col-md-12 section-heading text-center to-animate">
+					<h2>Notre équipe</h2>
+				</div>
+				<div class="col-md-12">
+					<div class="row row-bottom-padded-lg">		
+						<div class="col-md-4 text-center to-animate">
+							<div class="person">
+								<img src="images/Jade.jpg" class="img-responsive img-rounded" alt="person">
+								<h3 class="name">Jade Hurtubise</h3>
+								<div class="position">Conseillère en vente</div>
+								<ul class="social social-circle">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 text-center to-animate">
+							<div class="person">
+								<img src="images/Elody.jpg" class="img-responsive img-rounded" alt="person">
+								<h3 class="name">Elody Lacroix</h3>
+								<div class="position">Conseillère en vente</div>
+								<ul class="social social-circle">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 text-center to-animate">
+							<div class="person">
+								<img src="images/Fantine.jpg" class="img-responsive img-rounded" alt="person">
+								<h3 class="name">Fantine Badeau</h3>
+								<div class="position">Gestion du Site Web</div>
+								<ul class="social social-circle">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="row row-bottom-padded-lg">
+						<div class="col-md-4 text-center to-animate">
+							<div class="person">
+								<img src="images/Helene.jpg" class="img-responsive img-rounded" alt="person">
+								<h3 class="name">Hélène Salesse</h3>
+								<div class="position">Marketing &amp Comptabilité</div>
+								<ul class="social social-circle">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 text-center to-animate">
+							<div class="person">
+								<img src="images/Jerome.jpg" class="img-responsive img-rounded" alt="person">
+								<h3 class="name">Jérôme Cossette</h3>
+								<div class="position">Poseur professionnel certifié</div>
+								<ul class="social social-circle">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 text-center to-animate">
+							<div class="person">
+								<img src="images/person3.jpg" class="img-responsive img-rounded" alt="person">
+								<h3 class="name">Louis-Matthieu Rousseau-Désaulniers</h3>
+								<div class="position">Poseur professionnel certifié</div>
+								<ul class="social social-circle">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>		
+					</div>
+				</div>	
+			</div
+		</div>
+	</div>
+	<div id="fh5co-our-services" data-section="services">
+		<div class="container">
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Nos Services</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 to-animate">
+							<h3>Notre équipe de professionnels vous accompagnera de la vente à la maintenance afin de s'assurer qu'aucun problème ne survienne et que vous profitiez pleinement de votre investissement.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="box to-animate">
+						<div class="icon colored-1"><span><i class="icon-mustache"></i></span></div>
+						<h3>Soucis du client</h3>
+						<p>Notre équipe vous écoutera attentivement afin de trouver ce qui vous convient le mieux selon votre budget et vos attentes.</p>
+					</div>
+					<div class="box to-animate">
+						<div class="icon colored-4"><span><i class="icon-heart"></i></span></div>
+						<h3>Un prix compétitif</h3>
+						<p>Nous vous offrons des prix très compétitifs afin de vous faire économiser.</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="box to-animate">
+						<div class="icon colored-2"><span><i class="icon-screen-desktop"></i></span></div>
+						<h3>Pose effectuée par des professionnels</h3>
+						<p>Nous nous occupons de la pose des panneaux afin de s'assurer que vous puissiez en profiter au maximum.</p>
+					</div>
+					<div class="box to-animate">
+						<div class="icon colored-5"><span><i class="icon-rocket"></i></span></div>
+						<h3>Maintenance simple</h3>
+						<p>Nous vous offrons un plan de maintenance afin que vous ayez l'esprit en paix si un imprévu venait à se présenter.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-pricing" data-section="pricing">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="single-animate animate-pricing-1">Tarif</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext single-animate animate-pricing-2">
+							<h3>Venez communiquez avec nos conseillers pour savoir combien vous pourriez économiser si vous passez à SolPan!</h3>
+						</div>
+					</div>
+				</div>
+			</div>			
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="price-box to-animate">
+						<div class="price">Tarif de base</div>
+						<ul class="pricing-info">
+							<li type="square">Un investissement de 30 000$ pour 10 m<sup>2</sup></li>
+							<li type="square">produit entre 1500$ et 2000$ en électricité par année</li>
+						</ul>
+						<a href="mailto:contact@solpan.ca?Subject=Rencontre%20avec%20un%20conseiller" target="_top" class="btn btn-default btn-sm">Communiquer avec un conseiller</a>
+					</div>
+				</div>
+				<div class="clearfix visible-sm-block"></div>				
+			</div>
+			
+		</div>
+	</div>
+	
+	<div id="fh5co-pricing" data-section="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="single-animate animate-pricing-1">Contact</h2>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="price-box to-animate">
+						<div class="price">Informations</div>
+						<ul class="pricing-info">
+							<li type="square">Courriel : contact@solpan.ca</sup></li>
+							<li type="square">Adresse : 2325 Rue de l'Université, Ville de Québec, QC G1V 0A6</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix visible-sm-block"></div>				
+			</div>
+		</div>
+	</div>	
+
+	<footer id="footer" role="contentinfo">
+		<div class="container">
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-12">
+					<p class="copyright text-center">&copy; 2015 Free <a href="index.html">Crew</a>. All Rights Reserved. <br> Free HTML5 Template by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> | Images by <a href="http://pexels.com/" target="_blank">Pexels</a> &amp;  <a href="http://unsplash.com/" target="_blank">Unsplash</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="social social-circle">
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-facebook"></i></a></li>
+						<li><a href="#"><i class="icon-youtube"></i></a></li>
+						<li><a href="#"><i class="icon-pinterest"></i></a></li>
+						<li><a href="#"><i class="icon-linkedin"></i></a></li>
+						<li><a href="#"><i class="icon-instagram"></i></a></li>
+						<li><a href="#"><i class="icon-dribbble"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+
+	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+	<script src="js/jquery.style.switcher.js"></script>
+	<script>
+	$(function(){
+		$('#colour-variations ul').styleSwitcher({
+			defaultThemeId: 'theme-switch',
+			hasPreview: false,
+			cookie: {
+	          	expires: 30,
+	          	isManagingLoad: true
+	      	}
+		});	
+		$('.option-toggle').click(function() {
+			$('#colour-variations').toggleClass('sleep');
+		});
+	});
+	</script>
+	<!-- End demo purposes only -->
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
